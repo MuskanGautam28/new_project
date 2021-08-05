@@ -3,36 +3,21 @@
 {% block body %}
 <h2>Update post</h2>
 <form action="/update_posts/{{my_data.id}}" method="post">
-  <div class="mb-3">
-    <label for="title" class="form-label">Title</label>
-    <input type="title" class="form-control" name="title" value="{{my_data.title}}" id="title">
-  </div>
-  <div class="mb-3">
-    <label for="subtitle" class="form-label">Subtitle</label>
-    <input type="subtitle" class="form-control" name="subtitle" value="{{my_data.subtitle}}" id="subtitle">
-  </div>
-  <div class="mb-3">
-    <label for="content" class="form-label">Content</label>
-    <input type="content" class="form-control"  name="content" value="{{my_data.content}}" id="content">
-  </div>
-  
-
-  <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3">
+        <label class="form-label" for="title">Title</label>
+        <input class="form-control" id="title" name="title" type="title" value="{{my_data.title}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="subtitle">Subtitle</label>
+        <input class="form-control" id="subtitle" name="subtitle" type="subtitle" value="{{my_data.subtitle}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="content">Content</label>
+        <input class="form-control" id="content" name="content" type="content" value="{{my_data.content}}">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
 </form>
 {% endblock %}
 
 
 
-<!-- h2>Update post</h2>
-<form action="/update_posts/{{my_data.id}}" method="post">
-  <label >Title:</label><br>
-  <input type="text"  name="title" value="{{my_data.title}}"><br>
-  <label>Subtitle:</label><br>
-  <input type="text"  name="subtitle" value="{{my_data.subtitle}}"><br><br>
-    <label>Content:</label><br>
-  <input type="text"  name="content" value="{{my_data.content}}"><br><br>
-
-  <input type="submit" value="Submit">
-</form>
-
- -->

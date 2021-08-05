@@ -5,19 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-  <div>
+<div>
 
-                   {% if user %}
-                     <h3> Username: {{user.username}}</h3>
-                   <h3>Email: {{user.email_id}}</h3>
-                   <h3>Password: {{user.password}}</h3>
-                   {% endif %}
-                {% for user in users %}
-                     <h3> Username: {{user.username}}</h3>
-                   <h3>Email: {{user.email_id}}</h3>
-                   <h3>Password: {{user.password}}</h3>
-                {% endfor %}
+    {% if user %}
+    <h3> Username: {{user.username}}</h3>
+    <h3>Email: {{user.email_id}}</h3>
+    <h3>Password: {{user.password}}</h3>
+    {% endif %}
+    {% for user in users %}
+    <h3> Username: {{user.username}}</h3>
+    <h3>Email: {{user.email_id}}</h3>
+    <h3>Password: {{user.password}}</h3>
+    {% endfor %}
 
-            </div>
+</div>
 </body>
 </html>

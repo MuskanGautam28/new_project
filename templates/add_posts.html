@@ -3,25 +3,25 @@
 {% block body %}
 <h2>Add post</h2>
 <form action="/add_posts" method="post">
-  <div class="mb-3">
-    <label for="title" class="form-label">Title</label>
-    <input type="title" class="form-control" name="title" id="title">
+    <div class="mb-3">
+        <label class="form-label" for="title">Title</label>
+        <input class="form-control" id="title" name="title" type="title">
 
-  </div>
-  <div class="mb-3">
-    <label for="subtitle" class="form-label">Subtitle</label>
-    <input type="subtitle" class="form-control" name="subtitle" id="subtitle">
-  </div>
-  <div class="mb-3">
-    <label for="content" class="form-label">Content</label>
-    <input type="content" class="form-control"  name="content" id="content">
-  </div>
-  <div class="mb-3">
-    <label for="user_id" class="form-label">User_id</label>
-    <input type="user_id" class="form-control"  name="user_id" id="user_id">
-  </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="subtitle">Subtitle</label>
+        <input class="form-control" id="subtitle" name="subtitle" type="subtitle">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="content">Content</label>
+        <input class="form-control" id="content" name="content" type="content">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="user_id">User_id</label>
+        <input class="form-control" id="user_id" name="user_id" type="user_id">
+    </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary" type="submit">Submit</button>
 </form>
 {% endblock %}
 
